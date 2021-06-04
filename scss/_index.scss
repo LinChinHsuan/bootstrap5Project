@@ -1,0 +1,92 @@
+//自訂
+body {
+    font-family: "Noto Sans TC", "Baloo Tamma 2";
+}
+li {
+    list-style: none;
+}
+
+//btn
+.btn-primary {
+    color: #636057;
+    &:hover{
+        color: #FFFFFF;
+        background-color: #FF785E;
+    }
+}
+.btn-outline-dark {
+    border-width: 2px;
+    &:hover{
+        color: #858377;
+        border-color: transparent;
+        background-color: #FFDF65;
+        .fas {
+            color: #FF785E;
+        }
+    }
+}
+//分頁
+.nav-pills .nav-item {
+    flex-grow: 1;
+    .nav-link {
+        width:100%;
+        border-radius: 0;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        &.active {
+            background-color: transparent;
+            border-bottom: 2px solid #FFDF65;
+        }
+    }
+    @include media-breakpoint-up(md) { 
+        flex-grow: 0;
+        .nav-link {
+            width:auto;
+        }
+    }
+}
+//表單
+.form-control,.form-select {
+    border: none;
+    background-color: #F7F7F7;
+}
+//元件修改
+.modal-header {
+    border-top: 4px solid $primary;
+}
+.card-body {
+    border-radius: 0 0 8px 8px;
+}
+.border-collapse{
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 0 8px 0 rgba(73,72,70,0.15);
+    .btn:focus {
+        box-shadow: none;
+    }
+}
+.collapse .card {
+    border: none;
+    border-top: 1px solid #E5E5E5;
+}
+//只用幾次的顏色
+.bg-theme-black {
+    background-color: #494846;
+}
+.bg-theme-white {
+    background-color: #FEFEFE;
+}
+.bg-theme-light{
+    background-color: #F8F9FA;
+}
+//通用
+.lh-30 {
+    line-height: 30px;
+}
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.z-index-1100 {
+    z-index: 1100;
+}
